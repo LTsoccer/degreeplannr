@@ -1,29 +1,32 @@
-* {
-    /* border: 1px solid salmon; */
+
+.pic {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 400px;
+    width: 240px;
+    margin-bottom: 25px;
+    margin-top: 55px;
+    margin-left: 30px;
 }
 
-body {
-    font-family: 'Nunito Sans', sans-serif;
-}
 
-.toc ul {
-    padding:0;
-    list-style: none;
-}
-
-.toc li {
-    margin:0;
-    margin-bottom: 0.5rem;
-}
-
-.toc li a {
+a {
     text-decoration: none;
 }
 
-.toc li a:hover {
-    text-decoration: underline;
+div .card h4 {
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
-.required-classes .card {
-    border-left: 8px solid #0c63e4;
+div .marginb {
+    margin-bottom: 20px;
+}
+
+div .marginb2 {
+    margin-bottom: 80px;
+}
+
+div .padl {
+    margin-left: 30px;
 }
