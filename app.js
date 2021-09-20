@@ -1,3 +1,5 @@
+
+
 const lacCourses = [
     {
     "Course ID": "BIB 121",
@@ -501,434 +503,231 @@ const lacCourses = [
     }
 ];
 
-const csisCourses = [
+let csISCourses = [
     {
-        "Course ID": "CIS 171",
-        "Course Name": "Computer Programming I",
-        "Credit Hours": "3",
-        "Course Description": "A study of the design of algorithms, pseudocode, data types, control structures, arrays, program testing, and text file processing using a high-level programming language.",
-        "Prerequisite": "",
-        "Semester Offered": "Fall",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "CIS 171",
+    "Course Name": "Computer Programming I",
+    "Credit Hours": "3",
+    "Course Description": "A study of the design of algorithms, pseudocode, data types, control structures, arrays, program testing, and text file processing using a high-level programming language.",
+    "Prerequisite": "",
+    "Semester Offered": "Fall",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "CIS 172",
-        "Course Name": "Computer Programming II",
-        "Credit Hours": "3",
-        "Course Description": "A continuation of CIS 171. Emphasis is on object-oriented constructs and techniques, generics and use of common data structures supported by the language",
-        "Prerequisite": "CIS 171",
-        "Semester Offered": "Spring",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "CIS 172",
+    "Course Name": "Computer Programming II",
+    "Credit Hours": "3",
+    "Course Description": "A continuation of CIS 171. Emphasis is on object-oriented constructs and techniques, generics and use of common data structures supported by the language",
+    "Prerequisite": "CIS 171",
+    "Semester Offered": "Spring",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "CIS 211",
-        "Course Name": "Introduction to Web Design",
-        "Credit Hours": "3",
-        "Course Description": "An interdisciplinary introduction to web design covering both technical and artistic aspects. The course will cover the current tools and technologies used for web design and development. Emphasis will also be given to the artistic principles relevant to good web design. Students will design, develop, and critique websites.",
-        "Prerequisite": "",
-        "Semester Offered": "Spring",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "CIS 211",
+    "Course Name": "Introduction to Web Design",
+    "Credit Hours": "3",
+    "Course Description": "An interdisciplinary introduction to web design covering both technical and artistic aspects. The course will cover the current tools and technologies used for web design and development. Emphasis will also be given to the artistic principles relevant to good web design. Students will design, develop, and critique websites.",
+    "Prerequisite": "",
+    "Semester Offered": "Spring",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "CIS 267",
-        "Course Name": "Application Development I (W)",
-        "Credit Hours": "3",
-        "Course Description": "Windows-based program development using visual languages, editors and programming tools. This course contains a significant writing component.",
-        "Prerequisite": "CIS 211",
-        "Semester Offered": "Fall",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "CIS 267",
+    "Course Name": "Application Development I (W)",
+    "Credit Hours": "3",
+    "Course Description": "Windows-based program development using visual languages, editors and programming tools. This course contains a significant writing component.",
+    "Prerequisite": "CIS 211",
+    "Semester Offered": "Fall",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "CIS 273",
-        "Course Name": "Data Structures",
-        "Credit Hours": "3",
-        "Course Description": "A continuation of CIS 172. A study of the use of data structures in the design and implementation of software. Topics may include linked lists, stacks, queues and trees, and their proper application. ",
-        "Prerequisite": "CIS 172",
-        "Semester Offered": "Fall",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "CIS 273",
+    "Course Name": "Data Structures",
+    "Credit Hours": "3",
+    "Course Description": "A continuation of CIS 172. A study of the use of data structures in the design and implementation of software. Topics may include linked lists, stacks, queues and trees, and their proper application. ",
+    "Prerequisite": "CIS 172",
+    "Semester Offered": "Fall",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "CIS 324",
-        "Course Name": "Database Systems",
-        "Credit Hours": "3",
-        "Course Description": "A study of the major data models with emphasis on relational systems. Topics include database design, database implementation, database processing, and security. Project work will include creating and modifying databases using Structured Query Language (SQL) and Query By Example (QBE). Current commercial databases will also be studied.",
-        "Prerequisite": "CIS 172",
-        "Semester Offered": "Fall",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "CIS 324",
+    "Course Name": "Database Systems",
+    "Credit Hours": "3",
+    "Course Description": "A study of the major data models with emphasis on relational systems. Topics include database design, database implementation, database processing, and security. Project work will include creating and modifying databases using Structured Query Language (SQL) and Query By Example (QBE). Current commercial databases will also be studied.",
+    "Prerequisite": "CIS 172",
+    "Semester Offered": "Fall",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "CIS 345",
-        "Course Name": "Computer Networks",
-        "Credit Hours": "3",
-        "Course Description": "An overview of computer networking principles and practices. Topics include networking theory, layered protocols, Internet addressing, network topologies, network architectures, and network implementation.",
-        "Prerequisite": "MAT 101",
-        "Semester Offered": "Spring",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "CIS 345",
+    "Course Name": "Computer Networks",
+    "Credit Hours": "3",
+    "Course Description": "An overview of computer networking principles and practices. Topics include networking theory, layered protocols, Internet addressing, network topologies, network architectures, and network implementation.",
+    "Prerequisite": "MAT 101",
+    "Semester Offered": "Spring",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "CIS 367",
-        "Course Name": "Application Development II",
-        "Credit Hours": "3",
-        "Course Description": "Windows-based program development using visual languages, editors and programming tools. This course contains a significant writing component.",
-        "Prerequisite": "CIS 276 and CIS 172",
-        "Semester Offered": "Fall",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "CIS 367",
+    "Course Name": "Application Development II",
+    "Credit Hours": "3",
+    "Course Description": "Windows-based program development using visual languages, editors and programming tools. This course contains a significant writing component.",
+    "Prerequisite": "CIS 276 and CIS 172",
+    "Semester Offered": "Fall",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "CIS 374",
-        "Course Name": "Algorithms",
-        "Credit Hours": "3",
-        "Course Description": "A continuation of topics introduced in CIS 273. Topics may include sorting and searching techniques, graphs, relative and hashed files, use of data structures as abstractions of problems, and algorithmic complexity (O-notation).",
-        "Prerequisite": "CIS 273",
-        "Semester Offered": "Spring",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "CIS 374",
+    "Course Name": "Algorithms",
+    "Credit Hours": "3",
+    "Course Description": "A continuation of topics introduced in CIS 273. Topics may include sorting and searching techniques, graphs, relative and hashed files, use of data structures as abstractions of problems, and algorithmic complexity (O-notation).",
+    "Prerequisite": "CIS 273",
+    "Semester Offered": "Spring",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "CIS 460",
-        "Course Name": "Operating Systems (W)",
-        "Credit Hours": "3",
-        "Course Description": "Principles of design and operation of computer operating systems. Topics include processes, threads, memory management, scheduling, file systems, input and output, concurrency, and performance",
-        "Prerequisite": "CIS 272",
-        "Semester Offered": "Spring - Odd",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "CIS 460",
+    "Course Name": "Operating Systems (W)",
+    "Credit Hours": "3",
+    "Course Description": "Principles of design and operation of computer operating systems. Topics include processes, threads, memory management, scheduling, file systems, input and output, concurrency, and performance",
+    "Prerequisite": "CIS 272",
+    "Semester Offered": "Spring - Odd",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "CIS 474",
-        "Course Name": "Artificial Intelligence",
-        "Credit Hours": "3",
-        "Course Description": "A survey of and an introduction to various topics in artificial intelligence. Topics include expert systems, automatic problem-solving, natural language processing, uncertainty management, knowledge representation, and machine learning.",
-        "Prerequisite": "CIS 273",
-        "Semester Offered": "Fall - Even",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "CIS 474",
+    "Course Name": "Artificial Intelligence",
+    "Credit Hours": "3",
+    "Course Description": "A survey of and an introduction to various topics in artificial intelligence. Topics include expert systems, automatic problem-solving, natural language processing, uncertainty management, knowledge representation, and machine learning.",
+    "Prerequisite": "CIS 273",
+    "Semester Offered": "Fall - Even",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "CIS 491",
-        "Course Name": "Advanced Topics in Computer Science (W)",
-        "Credit Hours": "3",
-        "Course Description": "A capstone course for exploring advanced theoretical concepts and current issues in computer science. A major independent research project will be required. This course includes a significant writing component. Prerequisite: Senior standing (90+ hours).",
-        "Prerequisite": "Senior Standing (90+ hours)",
-        "Semester Offered": "Spring",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "CIS 491",
+    "Course Name": "Advanced Topics in Computer Science (W)",
+    "Credit Hours": "3",
+    "Course Description": "A capstone course for exploring advanced theoretical concepts and current issues in computer science. A major independent research project will be required. This course includes a significant writing component. Prerequisite: Senior standing (90+ hours).",
+    "Prerequisite": "Senior Standing (90+ hours)",
+    "Semester Offered": "Spring",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "MAT 235",
-        "Course Name": "Introductory Statistics",
-        "Credit Hours": "3",
-        "Course Description": "An introduction to basic statistical techniques, including frequency distributions, averages, data analysis, samplings, tests of hypothesis, linear regression, chi-square tests, and related areas in probability theory. Prerequisite: Two (2) years of high school algebra and required proficiency score of 21 or better on math portion of the ACT or proficiency score on the ACCUPLACER.",
-        "Prerequisite": "",
-        "Semester Offered": "Fall, Spring",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "MAT 235",
+    "Course Name": "Introductory Statistics",
+    "Credit Hours": "3",
+    "Course Description": "An introduction to basic statistical techniques, including frequency distributions, averages, data analysis, samplings, tests of hypothesis, linear regression, chi-square tests, and related areas in probability theory. Prerequisite: Two (2) years of high school algebra and required proficiency score of 21 or better on math portion of the ACT or proficiency score on the ACCUPLACER.",
+    "Prerequisite": "",
+    "Semester Offered": "Fall, Spring",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "MAT 240",
-        "Course Name": "Discrete Mathematics",
-        "Credit Hours": "3",
-        "Course Description": "A study in the mathematics that deals with \"separated\" or discrete sets of objects rather than with continuous sets such as the real line. Topics include set theory, combinatorics, logic, introductory proof techniques, introduction to matrix algebra, relations and graphs, functions, recursion and recurrence relations, graphs, and data trees.",
-        "Prerequisite": "MAT 101",
-        "Semester Offered": "Spring",
-        "Category": "CS",
-        "Subcategory": "CS Core"
+    "Course ID": "MAT 240",
+    "Course Name": "Discrete Mathematics",
+    "Credit Hours": "3",
+    "Course Description": "A study in the mathematics that deals with \"separated\" or discrete sets of objects rather than with continuous sets such as the real line. Topics include set theory, combinatorics, logic, introductory proof techniques, introduction to matrix algebra, relations and graphs, functions, recursion and recurrence relations, graphs, and data trees.",
+    "Prerequisite": "MAT 101",
+    "Semester Offered": "Spring",
+    "Category": "CS",
+    "Subcategory": "CS Core"
     },
     {
-        "Course ID": "CIS 311",
-        "Course Name": "Advanced Web Design",
-        "Credit Hours": "3",
-        "Course Description": "A continuation of CIS 211. The course will cover the advanced techniques and technologies used for modern web design. Emphasis will be given to current topics in the field of web design",
-        "Prerequisite": "CIS 211",
-        "Semester Offered": "Fall - Even",
-        "Category": "CS",
-        "Subcategory": "IS"
+    "Course ID": "CIS 311",
+    "Course Name": "Advanced Web Design",
+    "Credit Hours": "3",
+    "Course Description": "A continuation of CIS 211. The course will cover the advanced techniques and technologies used for modern web design. Emphasis will be given to current topics in the field of web design",
+    "Prerequisite": "CIS 211",
+    "Semester Offered": "Fall - Even",
+    "Category": "CS",
+    "Subcategory": "IS"
     },
     {
-        "Course ID": "CIS 322",
-        "Course Name": "Human-Computer Interaction (W)",
-        "Credit Hours": "3",
-        "Course Description": "A study of how people interact with computers in a variety of hardware and software environments including desktop, mobile, web, and native applications. This interdisciplinary approach will focus both on the principles of user-centered design and the application of those principles. This course contains a significant writing component.",
-        "Prerequisite": "",
-        "Semester Offered": "Spring - Odd",
-        "Category": "CS",
-        "Subcategory": "IS"
+    "Course ID": "CIS 322",
+    "Course Name": "Human-Computer Interaction (W)",
+    "Credit Hours": "3",
+    "Course Description": "A study of how people interact with computers in a variety of hardware and software environments including desktop, mobile, web, and native applications. This interdisciplinary approach will focus both on the principles of user-centered design and the application of those principles. This course contains a significant writing component.",
+    "Prerequisite": "",
+    "Semester Offered": "Spring - Odd",
+    "Category": "CS",
+    "Subcategory": "IS"
     },
     {
-        "Course ID": "CIS 388",
-        "Course Name": "Mobile Application Development",
-        "Credit Hours": "3",
-        "Course Description": "An introduction to mobile application design and development on current platforms. This course will emphasize the implementation of mobile applications using principles from visual and usability design.",
-        "Prerequisite": "CIS 172",
-        "Semester Offered": "",
-        "Category": "CS",
-        "Subcategory": "IS"
+    "Course ID": "CIS 388",
+    "Course Name": "Mobile Application Development",
+    "Credit Hours": "3",
+    "Course Description": "An introduction to mobile application design and development on current platforms. This course will emphasize the implementation of mobile applications using principles from visual and usability design.",
+    "Prerequisite": "CIS 172",
+    "Semester Offered": "",
+    "Category": "CS",
+    "Subcategory": "IS"
     },
     {
-        "Course ID": "CIS 441",
-        "Course Name": "System Administration and Security",
-        "Credit Hours": "3",
-        "Course Description": "A study of the configuration, administration, maintenance, and tuning of network servers using current operating systems and hardware. Securing the system from internal and external threats is emphasized throughout the course.",
-        "Prerequisite": "CIS 345",
-        "Semester Offered": "Fall - Even ",
-        "Category": "CS",
-        "Subcategory": "IS"
+    "Course ID": "CIS 441",
+    "Course Name": "System Administration and Security",
+    "Credit Hours": "3",
+    "Course Description": "A study of the configuration, administration, maintenance, and tuning of network servers using current operating systems and hardware. Securing the system from internal and external threats is emphasized throughout the course.",
+    "Prerequisite": "CIS 345",
+    "Semester Offered": "Fall - Even ",
+    "Category": "CS",
+    "Subcategory": "IS"
     },
     {
-        "Course ID": "CIS 497",
-        "Course Name": "Internship",
-        "Credit Hours": "3",
-        "Course Description": "",
-        "Prerequisite": "",
-        "Semester Offered": "",
-        "Category": "CS",
-        "Subcategory": "IS"
+    "Course ID": "CIS 497",
+    "Course Name": "Internship",
+    "Credit Hours": "3",
+    "Course Description": "",
+    "Prerequisite": "",
+    "Semester Offered": "",
+    "Category": "CS",
+    "Subcategory": "IS"
     },
     {
-        "Course ID": "CIS/CYB",
-        "Course Name": "300-400 Level Electives",
-        "Credit Hours": "3",
-        "Course Description": "",
-        "Prerequisite": "",
-        "Semester Offered": "",
-        "Category": "CS",
-        "Subcategory": "IS"
+    "Course ID": "CIS/CYB",
+    "Course Name": "300-400 Level Electives",
+    "Credit Hours": "3",
+    "Course Description": "",
+    "Prerequisite": "",
+    "Semester Offered": "",
+    "Category": "CS",
+    "Subcategory": "IS"
     },
     {
-        "Course ID": "CYB 201",
-        "Course Name": "Introduction to Linux",
-        "Credit Hours": "3",
-        "Course Description": "An introductory study focused on several flavors of the Linux desktop operating system. Basic commands, utilities, system structures, scripting, and tools will be explored along with system administration tools and techniques. This course will include a focus on securing the Linux desktop.",
-        "Prerequisite": "",
-        "Semester Offered": "Spring - Even",
-        "Category": "CS",
-        "Subcategory": "IS"
+    "Course ID": "CYB 201",
+    "Course Name": "Introduction to Linux",
+    "Credit Hours": "3",
+    "Course Description": "An introductory study focused on several flavors of the Linux desktop operating system. Basic commands, utilities, system structures, scripting, and tools will be explored along with system administration tools and techniques. This course will include a focus on securing the Linux desktop.",
+    "Prerequisite": "",
+    "Semester Offered": "Spring - Even",
+    "Category": "CS",
+    "Subcategory": "IS"
     },
     {
-        "Course ID": "CYB 220",
-        "Course Name": "Windows Security",
-        "Credit Hours": "3",
-        "Course Description": "An introductory study focused on the Windows desktop operating system. The main emphasis will be on Windows 10. Basic commands, utilities, system structures, scripting, and tools will be explored along with system administration tools and techniques. This course will include a focus on securing the Windows desktop.",
-        "Prerequisite": "",
-        "Semester Offered": "Fall",
-        "Category": "CS",
-        "Subcategory": "IS"
+    "Course ID": "CYB 220",
+    "Course Name": "Windows Security",
+    "Credit Hours": "3",
+    "Course Description": "An introductory study focused on the Windows desktop operating system. The main emphasis will be on Windows 10. Basic commands, utilities, system structures, scripting, and tools will be explored along with system administration tools and techniques. This course will include a focus on securing the Windows desktop.",
+    "Prerequisite": "",
+    "Semester Offered": "Fall",
+    "Category": "CS",
+    "Subcategory": "IS"
     }
-];
+    ];
 
-const cssdCourses = [
-    {
-        "Course ID": "CIS 171",
-        "Course Name": "Computer Programming I",
-        "Credit Hours": "3",
-        "Course Description": "A study of the design of algorithms, pseudocode, data types, control structures, arrays, program testing, and text file processing using a high-level programming language.",
-        "Prerequisite": "",
-        "Semester Offered": "Fall",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "CIS 172",
-        "Course Name": "Computer Programming II",
-        "Credit Hours": "3",
-        "Course Description": "A continuation of CIS 171. Emphasis is on object-oriented constructs and techniques, generics and use of common data structures supported by the language",
-        "Prerequisite": "CIS 171",
-        "Semester Offered": "Spring",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "CIS 211",
-        "Course Name": "Introduction to Web Design",
-        "Credit Hours": "3",
-        "Course Description": "An interdisciplinary introduction to web design covering both technical and artistic aspects. The course will cover the current tools and technologies used for web design and development. Emphasis will also be given to the artistic principles relevant to good web design. Students will design, develop, and critique websites.",
-        "Prerequisite": "",
-        "Semester Offered": "Spring",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "CIS 267",
-        "Course Name": "Application Development I (W)",
-        "Credit Hours": "3",
-        "Course Description": "Windows-based program development using visual languages, editors and programming tools. This course contains a significant writing component.",
-        "Prerequisite": "",
-        "Semester Offered": "Fall",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "CIS 273",
-        "Course Name": "Data Structures",
-        "Credit Hours": "3",
-        "Course Description": "A continuation of CIS 172. A study of the use of data structures in the design and implementation of software. Topics may include linked lists, stacks, queues and trees, and their proper application. ",
-        "Prerequisite": "CIS 172",
-        "Semester Offered": "Fall",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "CIS 324",
-        "Course Name": "Database Systems",
-        "Credit Hours": "3",
-        "Course Description": "A study of the major data models with emphasis on relational systems. Topics include database design, database implementation, database processing, and security. Project work will include creating and modifying databases using Structured Query Language (SQL) and Query By Example (QBE). Current commercial databases will also be studied.",
-        "Prerequisite": "",
-        "Semester Offered": "Fall",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "CIS 345",
-        "Course Name": "Computer Networks",
-        "Credit Hours": "3",
-        "Course Description": "An overview of computer networking principles and practices. Topics include networking theory, layered protocols, Internet addressing, network topologies, network architectures, and network implementation.",
-        "Prerequisite": "",
-        "Semester Offered": "Spring",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "CIS 367",
-        "Course Name": "Application Development II",
-        "Credit Hours": "3",
-        "Course Description": "Windows-based program development using visual languages, editors and programming tools. This course contains a significant writing component.",
-        "Prerequisite": "",
-        "Semester Offered": "Fall",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "CIS 374",
-        "Course Name": "Algorithms",
-        "Credit Hours": "3",
-        "Course Description": "A continuation of topics introduced in CIS 273. Topics may include sorting and searching techniques, graphs, relative and hashed files, use of data structures as abstractions of problems, and algorithmic complexity (O-notation).",
-        "Prerequisite": "CIS 273",
-        "Semester Offered": "Spring",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "CIS 460",
-        "Course Name": "Operating Systems (W)",
-        "Credit Hours": "3",
-        "Course Description": "Principles of design and operation of computer operating systems. Topics include processes, threads, memory management, scheduling, file systems, input and output, concurrency, and performance",
-        "Prerequisite": "",
-        "Semester Offered": "Spring - Odd",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "CIS 474",
-        "Course Name": "Artificial Intelligence",
-        "Credit Hours": "3",
-        "Course Description": "A survey of and an introduction to various topics in artificial intelligence. Topics include expert systems, automatic problem-solving, natural language processing, uncertainty management, knowledge representation, and machine learning.",
-        "Prerequisite": "",
-        "Semester Offered": "Fall - Even",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "CIS 491",
-        "Course Name": "Advanced Topics in Computer Science (W)",
-        "Credit Hours": "3",
-        "Course Description": "A capstone course for exploring advanced theoretical concepts and current issues in computer science. A major independent research project will be required. This course includes a significant writing component. Prerequisite: Senior standing (90+ hours).",
-        "Prerequisite": "",
-        "Semester Offered": "Spring",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "MAT 235",
-        "Course Name": "Introductory Statistics",
-        "Credit Hours": "3",
-        "Course Description": "An introduction to basic statistical techniques, including frequency distributions, averages, data analysis, samplings, tests of hypothesis, linear regression, chi-square tests, and related areas in probability theory. Prerequisite: Two (2) years of high school algebra and required proficiency score of 21 or better on math portion of the ACT or proficiency score on the ACCUPLACER.",
-        "Prerequisite": "",
-        "Semester Offered": "Spring, Fall",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "MAT 240",
-        "Course Name": "Discrete Mathematics",
-        "Credit Hours": "3",
-        "Course Description": "A study in the mathematics that deals with \"separated\" or discrete sets of objects rather than with continuous sets such as the real line. Topics include set theory, combinatorics, logic, introductory proof techniques, introduction to matrix algebra, relations and graphs, functions, recursion and recurrence relations, graphs, and data trees.",
-        "Prerequisite": "",
-        "Semester Offered": "Spring",
-        "Category": "CS",
-        "Subcategory": "CS Core"
-    },
-    {
-        "Course ID": "CIS 368",
-        "Course Name": "Software Engineering (W)",
-        "Credit Hours": "3",
-        "Course Description": "A study of software engineering from initial concept through design, development, testing, and maintenance of the product. Discussion covers software development life cycle models. Topics include quality, validation and verification, and human factors. This course includes a significant writing component.",
-        "Prerequisite": "CIS 267",
-        "Semester Offered": "Fall - Odd",
-        "Category": "CS",
-        "Subcategory": "SD"
-    },
-    {
-        "Course ID": "CIS 386",
-        "Course Name": "Architecture and Assembly Language",
-        "Credit Hours": "3",
-        "Course Description": "An introduction to the low-level architecture of modern computer systems. Architecture topics include registers, pipelining, data representation, input, and output. Information covered will be illustrated using assembly language.",
-        "Prerequisite": "CIS 273",
-        "Semester Offered": "Fall - Even",
-        "Category": "CS",
-        "Subcategory": "SD"
-    },
-    {
-        "Course ID": "CIS 444",
-        "Course Name": "Parallel Programming",
-        "Credit Hours": "3",
-        "Course Description": "An introduction to the fundamentals of parallel and distributed computation. Topics include parallel architectures, parallel algorithm design, and parallel programming techniques. Modern parallel architectures such as computer clusters and GPUs will be emphasized.",
-        "Prerequisite": "CIS 374",
-        "Semester Offered": "Fall - Odd",
-        "Category": "CS",
-        "Subcategory": "SD"
-    },
-    {
-        "Course ID": "CIS 470",
-        "Course Name": "Programming Languages: Theory & Practice",
-        "Credit Hours": "3",
-        "Course Description": "The principles of programming language design and implementation. Topics include formal language theory, language paradigms, and language evaluation. Students will write programs in several modern languages including non-imperative languages.",
-        "Prerequisite": "CIS 273",
-        "Semester Offered": "Fall - Odd",
-        "Category": "CS",
-        "Subcategory": "SD"
-    },
-    {
-        "Course ID": "MAT 223",
-        "Course Name": "Analytics and Calculus II",
-        "Credit Hours": "4",
-        "Course Description": "A continuation of MAT 122. Applications of the definite integral, techniques of integration, paratmetric equations, polar coordinates, and infinite sequences and series are the main topics of this course.",
-        "Prerequisite": "MAT 122",
-        "Semester Offered": "Fall",
-        "Category": "CS",
-        "Subcategory": "SD"
-    },
-    {
-        "Course ID": "PHS 212",
-        "Course Name": "Physics for Science and Engineering II (W)",
-        "Credit Hours": "4",
-        "Course Description": "A continuation of PHS 211 and a requirement of all pre-engineering, chemistry and biochemistry students. This course introduces students to thermodynamics, the kinetic theory of gases, electric fields and potential, capacitance, resistance, AC and DC circuits, magnetic fields, inductance, electromagnetic waves, light, optics, interference diffraction, and selected topics dealing with relativity, quantum mechanics, and nuclear physics. This course meets for three (3) hours of lecture and three (3) hours of laboratory each week. This course contains a significant writing component.",
-        "Prerequisite": "PHS 211",
-        "Semester Offered": "Spring",
-        "Category": "CS",
-        "Subcategory": "SD"
-    }
-];
-
-const cybCourses = [
-    {
+    let cybCourses = [
+        {
         "Course ID": "CYB 101",
         "Course Name": " Introduction to Cybersecurity",
         "Credit Hours": "3",
@@ -937,8 +736,8 @@ const cybCourses = [
         "Semester Offered": "Fall",
         "Category": "CYB",
         "Subcategory": "CYB Core"
-    },
-    {
+        },
+        {
         "Course ID": "CYB 201",
         "Course Name": "Introduction to Linux",
         "Credit Hours": "3",
@@ -947,8 +746,8 @@ const cybCourses = [
         "Semester Offered": "Spring",
         "Category": "CYB",
         "Subcategory": "CYB Core"
-    },
-    {
+        },
+        {
         "Course ID": "CYB 220",
         "Course Name": "Windows Security",
         "Credit Hours": "3",
@@ -957,8 +756,8 @@ const cybCourses = [
         "Semester Offered": "Fall",
         "Category": "CYB",
         "Subcategory": "CYB Core"
-    },
-    {
+        },
+        {
         "Course ID": "CYB 350",
         "Course Name": "Ethical Hacking",
         "Credit Hours": "3",
@@ -967,8 +766,8 @@ const cybCourses = [
         "Semester Offered": "Spring Even",
         "Category": "CYB",
         "Subcategory": "CYB Core"
-    },
-    {
+        },
+        {
         "Course ID": "CYB 380",
         "Course Name": "Cybersecurity Planning and Risk Management (W)",
         "Credit Hours": "3",
@@ -977,8 +776,8 @@ const cybCourses = [
         "Semester Offered": "Fall Even",
         "Category": "CYB",
         "Subcategory": "CYB Core"
-    },
-    {
+        },
+        {
         "Course ID": "CYB 390",
         "Course Name": "Network Administration and Security",
         "Credit Hours": "3",
@@ -987,8 +786,8 @@ const cybCourses = [
         "Semester Offered": "Fall",
         "Category": "CYB",
         "Subcategory": "CYB Core"
-    },
-    {
+        },
+        {
         "Course ID": "CYB 410",
         "Course Name": "Digital Forensics and Incident Response (W)",
         "Credit Hours": "3",
@@ -997,8 +796,8 @@ const cybCourses = [
         "Semester Offered": "Fall Odd",
         "Category": "CYB",
         "Subcategory": "CYB Core"
-    },
-    {
+        },
+        {
         "Course ID": "CYB 430",
         "Course Name": "Intrusion Detection and Mitigation",
         "Credit Hours": "3",
@@ -1007,8 +806,8 @@ const cybCourses = [
         "Semester Offered": "Spring Odd",
         "Category": "CYB",
         "Subcategory": "CYB Core"
-    },
-    {
+        },
+        {
         "Course ID": "CYB 440",
         "Course Name": "Cryptography",
         "Credit Hours": "3",
@@ -1017,8 +816,8 @@ const cybCourses = [
         "Semester Offered": "Spring Even",
         "Category": "CYB",
         "Subcategory": "CYB Core"
-    },
-    {
+        },
+        {
         "Course ID": "CYB 495",
         "Course Name": "Cybersecurity Capstone (W)",
         "Credit Hours": "3",
@@ -1027,8 +826,8 @@ const cybCourses = [
         "Semester Offered": "Spring",
         "Category": "CYB",
         "Subcategory": "CYB Core"
-    },
-    {
+        },
+        {
         "Course ID": "CIS 171",
         "Course Name": "Computer Programming I",
         "Credit Hours": "3",
@@ -1037,8 +836,8 @@ const cybCourses = [
         "Semester Offered": "Fall",
         "Category": "CYB",
         "Subcategory": "CIS Core"
-    },
-    {
+        },
+        {
         "Course ID": "CIS 172",
         "Course Name": "Computer Programming II",
         "Credit Hours": "3",
@@ -1047,8 +846,8 @@ const cybCourses = [
         "Semester Offered": "Spring",
         "Category": "CYB",
         "Subcategory": "CIS Core"
-    },
-    {
+        },
+        {
         "Course ID": "CIS 273",
         "Course Name": "Data Structures",
         "Credit Hours": "3",
@@ -1057,8 +856,8 @@ const cybCourses = [
         "Semester Offered": "Fall",
         "Category": "CYB",
         "Subcategory": "CIS Core"
-    },
-    {
+        },
+        {
         "Course ID": "CIS 324",
         "Course Name": "Database Systems",
         "Credit Hours": "3",
@@ -1067,8 +866,8 @@ const cybCourses = [
         "Semester Offered": "Fall",
         "Category": "CYB",
         "Subcategory": "CIS Core"
-    },
-    {
+        },
+        {
         "Course ID": "CIS 345",
         "Course Name": "Computer Networks",
         "Credit Hours": "3",
@@ -1077,8 +876,8 @@ const cybCourses = [
         "Semester Offered": "Spring",
         "Category": "CYB",
         "Subcategory": "CIS Core"
-    },
-    {
+        },
+        {
         "Course ID": "CIS 441",
         "Course Name": "System Admin and Security",
         "Credit Hours": "3",
@@ -1087,8 +886,8 @@ const cybCourses = [
         "Semester Offered": "Fall Even",
         "Category": "CYB",
         "Subcategory": "CIS Core"
-    },
-    {
+        },
+        {
         "Course ID": "CIS 460",
         "Course Name": "Operating Systems",
         "Credit Hours": "3",
@@ -1097,146 +896,17 @@ const cybCourses = [
         "Semester Offered": "Spring Odd",
         "Category": "CYB",
         "Subcategory": "CIS Core"
-    }
-];
+        }
+        ];
 
-const  iddCourses = [
-    {
-        "Course ID": "ART 130",
-        "Course Name": "2-D Design",
-        "Credit Hours": "3",
-        "Course Description": "The principles, processes, and techniques of design in two dimensional media. Art materials will be purchased by the student. Both computer applications and wet media will be used.\n\n",
-        "Prerequisite": "",
-        "Semester Offered": "Fall, Spring",
-        "Category": "IDD",
-        "Subcategory": "IDD Core"
-    },
-    {
-        "Course ID": "ART 230",
-        "Course Name": "Digital Graphics Fundamentals",
-        "Credit Hours": "3",
-        "Course Description": "An introductory course designed to provide students with the fundamentals necessary to effectively use applications widely available in the field of design. Students will become familiar with each program's interface and capabilities through lectures, demonstrations, and projects.",
-        "Prerequisite": "",
-        "Semester Offered": "Fall",
-        "Category": "IDD",
-        "Subcategory": "IDD Core"
-    },
-    {
-        "Course ID": "ART 235",
-        "Course Name": "Graphic Design I",
-        "Credit Hours": "3",
-        "Course Description": "A course that combines studio work with classroom instruction. Fundamentals of communication through design and basic graphic tools, techniques, and procedures are incorporated with creative problem-solving. This course includes a graphic design history component and a significant writing component.",
-        "Prerequisite": "ART 234, ART 234 ",
-        "Semester Offered": "Spring",
-        "Category": "IDD",
-        "Subcategory": "IDD Core"
-    },
-    {
-        "Course ID": "ART 337",
-        "Course Name": "Graphic Design II",
-        "Credit Hours": "3",
-        "Course Description": "A course that expands on ART 235 Graphic Design I and offers students the opportunity to work on a comprehensive multi-component design project. Students are expected to demonstrate sophisticated design decisions and appropriate design solutions that demonstrate a high level of expertise and achievement as they develop a specific body of work.",
-        "Prerequisite": "ART 235",
-        "Semester Offered": "Fall",
-        "Category": "IDD",
-        "Subcategory": "IDD Core"
-    },
-    {
-        "Course ID": "CIS 171",
-        "Course Name": "Computer Programming I",
-        "Credit Hours": "3",
-        "Course Description": "A study of the design of algorithms, pseudocode, data types, control structures, arrays, program testing, and text file processing using a high-level programming language.  ",
-        "Prerequisite": "MAT 101",
-        "Semester Offered": "Fall",
-        "Category": "IDD",
-        "Subcategory": "IDD Core"
-    },
-    {
-        "Course ID": "CIS 211",
-        "Course Name": "Introduction to Web Design",
-        "Credit Hours": "3",
-        "Course Description": "An interdisciplinary introduction to web design covering both technical and artistic aspects. The course will cover the current tools and technologies used for web design and development. Emphasis will also be given to the artistic principles relevant to good web design. Students will design, develop, and critique websites.",
-        "Prerequisite": "",
-        "Semester Offered": "Spring",
-        "Category": "IDD",
-        "Subcategory": "IDD Core"
-    },
-    {
-        "Course ID": "CIS 311",
-        "Course Name": "Advanced Web Design",
-        "Credit Hours": "3",
-        "Course Description": "A continuation of CIS 211. The course will cover the advanced techniques and technologies used for modern web design. Emphasis will be given to current topics in the field of web design. ",
-        "Prerequisite": "CIS 211",
-        "Semester Offered": "Fall, Even",
-        "Category": "IDD",
-        "Subcategory": "IDD Core"
-    },
-    {
-        "Course ID": "CIS 322",
-        "Course Name": "Human-Computer Interaction",
-        "Credit Hours": "3",
-        "Course Description": "A study of how people interact with computers in a variety of hardware and software environments including desktop, mobile, web, and native applications. This interdisciplinary approach will focus both on the principles of user-centered design and the application of those principles. This course contains a significant writing component.",
-        "Prerequisite": "",
-        "Semester Offered": "Spring, Odd",
-        "Category": "IDD",
-        "Subcategory": "IDD Core"
-    },
-    {
-        "Course ID": "CIS 495",
-        "Course Name": "Capstone Senior Design Project (W)",
-        "Credit Hours": "3",
-        "Course Description": "A capstone course to prepare students for work in the field of interactive digital design. Students will complete portfolios and develop a significant digital project. This course has a significant writing component.",
-        "Prerequisite": "90+ hours",
-        "Semester Offered": "Spring",
-        "Category": "IDD",
-        "Subcategory": "IDD Core"
-    },
-    {
-        "Course ID": "CIS 172",
-        "Course Name": "Computer Programming II",
-        "Credit Hours": "3",
-        "Course Description": "A continuation of CIS 171. Emphasis is on object-oriented constructs and techniques, generics and use of common data structures supported by the language.",
-        "Prerequisite": "CIS 171",
-        "Semester Offered": "Spring",
-        "Category": "IDD",
-        "Subcategory": "IDD Dev"
-    },
-    {
-        "Course ID": "CIS 267",
-        "Course Name": "Application Development I (W)",
-        "Credit Hours": "3",
-        "Course Description": "Windows-based program development using visual languages, editors and programming tools. This course contains a significant writing component.",
-        "Prerequisite": "CIS 211",
-        "Semester Offered": "Fall",
-        "Category": "IDD",
-        "Subcategory": "IDD Dev"
-    },
-    {
-        "Course ID": "CIS 367",
-        "Course Name": "Application Development II",
-        "Credit Hours": "3",
-        "Course Description": "Internet-based program development using web technologies, web development programming tools, and database interfaces.",
-        "Prerequisite": "CIS 267",
-        "Semester Offered": "Spring",
-        "Category": "IDD",
-        "Subcategory": "IDD Dev"
-    },
-    {
-        "Course ID": "CIS 388",
-        "Course Name": "Mobile Application Development",
-        "Credit Hours": "3",
-        "Course Description": "An introduction to mobile application design and development on current platforms. This course will emphasize the implementation of mobile applications using principles from visual and usability design.",
-        "Prerequisite": "CIS 172",
-        "Semester Offered": "Fall, Odd",
-        "Category": "IDD",
-        "Subcategory": "IDD Dev"
-    }
-];
 
 let lacReqs = document.getElementById("lac-reqs");
 
 for (let lacCourse of lacCourses) 
 {
+  if (lacCourse["Prerequisite"] == "") {
+    lacCourse["Prerequisite"] = "none";
+  }
     console.log(lacCourse);
     lacReqs.innerHTML += 
         `<div class="card my-2">
@@ -1247,7 +917,6 @@ for (let lacCourse of lacCourses)
             </h5>
             <p class="col-3 text-end">${lacCourse["Credit Hours"]} hours</p>
           </div>
-
           <div class="row">
             <div class="col">
               <p class="card-subtitle"> ${lacCourse["Course ID"]}</p>
@@ -1271,6 +940,107 @@ for (let lacCourse of lacCourses)
             <p class="text-muted card-text">
             ${lacCourse["Course Description"]}
             </p>
+            <p class="text-muted small card-text">
+            Prerequisites: ${lacCourse["Prerequisite"]}
+            </p>
+            
+          </div>
+        </div>
+      </div>`;
+}
+
+let cybReqs = document.getElementById("cyb-reqs");
+
+for (let cybCourse of cybCourses) 
+{
+  if (cybCourse["Prerequisite"] == "") {
+    cybCourse["Prerequisite"] = "none";
+  }
+    console.log(cybCourse);
+    cybReqs.innerHTML += 
+        `<div class="card my-2">
+        <div class="card-body">
+          <div class="row">
+            <h5 class="card-title col">
+              <b>${cybCourse["Course Name"]}</b>
+            </h5>
+            <p class="col-3 text-end">${cybCourse["Credit Hours"]} hours</p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="card-subtitle"> ${cybCourse["Course ID"]}</p>
+            </div>
+            <div class="col-4 text-end">
+              <span class="text-muted">${cybCourse["Semester Offered"]}</span>
+            </div>
+          </div>
+          <a
+            href="#${convertID(cybCourse["Course ID"])}"
+            class="card-link fw-light"
+            data-bs-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            >Course description ›</a
+          >
+          <div
+            class="course-description collapse card-text"
+            id="${convertID(cybCourse["Course ID"])}"
+          >
+            <p class="text-muted card-text">
+            ${cybCourse["Course Description"]}
+            </p>
+            <p class="text-muted small card-text">
+            Prerequisites: ${cybCourse["Prerequisite"]}
+            </p>
+            
+          </div>
+        </div>
+      </div>`;
+}
+
+let csISReqs = document.getElementById("csIS-reqs");
+
+for (let csISCourse of csISCourses) 
+{
+  if (csISCourse["Prerequisite"] == "") {
+    csISCourse["Prerequisite"] = "none";
+  }
+    console.log(csISCourse);
+    csISReqs.innerHTML += 
+        `<div class="card my-2">
+        <div class="card-body">
+          <div class="row">
+            <h5 class="card-title col">
+              <b>${csISCourse["Course Name"]}</b>
+            </h5>
+            <p class="col-3 text-end">${csISCourse["Credit Hours"]} hours</p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="card-subtitle"> ${csISCourse["Course ID"]}</p>
+            </div>
+            <div class="col-4 text-end">
+              <span class="text-muted">${csISCourse["Semester Offered"]}</span>
+            </div>
+          </div>
+          <a
+            href="#${convertID(csISCourse["Course ID"])}"
+            class="card-link fw-light"
+            data-bs-toggle="collapse"
+            role="button"
+            aria-expanded="false"
+            >Course description ›</a
+          >
+          <div
+            class="course-description collapse card-text"
+            id="${convertID(csISCourse["Course ID"])}"
+          >
+            <p class="text-muted card-text">
+            ${csISCourse["Course Description"]}
+            </p>
+            <p class="text-muted small card-text">
+            Prerequisites: ${csISCourse["Prerequisite"]}
+            </p>
             
           </div>
         </div>
@@ -1282,5 +1052,3 @@ function convertID(courseID) {
             .replace("/","-")
             .toLowerCase();
 }
-
-
